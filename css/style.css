@@ -1,0 +1,230 @@
+body,h1,h2,h3,h4,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin: 0;padding: 0;}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: top;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;}
+textarea{resize:none;overflow: auto;}
+body{font-size:12px;font-family: arial;}
+
+html,body,.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+
+#load{
+	position: absolute;
+	z-index: 111;
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+}
+
+.logo{
+	position: fixed;
+	z-index: 11;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.swiper-slide{
+	position: relative;
+	height: 100%;
+}
+
+.page1{
+	background: url(../img/bg1.png) no-repeat;
+}
+.page1>div{
+	position: absolute;
+    top: 66%;
+}
+.page1 .ani img:first-of-type{
+	width: 100%;
+}
+.page1 .ani img:nth-of-type(2){
+	position: absolute;
+	width: 15%;
+    left: 52%;
+    top: 31%;
+   	/*animation:page1 1s;*/
+}
+.page1>img{
+	position: absolute;
+	width: 80%;
+    left: 3%;
+    top: 15%;
+}
+.page1>p{
+	display: block;
+	line-height: 1.4em;
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+    color: #8E8C8C;
+    left: 1%;
+    top: 34%;
+}
+
+.page2{
+	background: url(../img/bg2.jpg) no-repeat;
+}
+.page2 img:nth-of-type(1){
+	position: absolute;
+	width: 80%;
+    right: 0;
+    top: 65%;
+}
+.page2 img:nth-of-type(2){
+	position: absolute;
+	width: 80%;
+    left: 0;
+    top: 13%;
+}
+.page2>p{
+	position: absolute;
+    left: 1%;
+    top: 36%;
+    /*font-size: 1.4em;*/
+    font-size: 16px;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #8E8C8C;
+}
+/*.page2>p>strong{*/
+.swiper-container strong{
+	font-size: 1.4em;
+	color: #A26334;
+}
+
+.page3{
+	background: url(../img/bg3.jpg) no-repeat;
+}
+.page3 img:nth-of-type(1){
+	position: absolute;
+	width: 50%;
+    left: 1%;
+    bottom: 3%;
+}
+.page3 img:nth-of-type(2){
+	position: absolute;
+	width: 80%;
+    right: 1%;
+    top: 7%;
+}
+.page3>p{
+	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 28%;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #8E8C8C;
+}
+
+.page4{
+	background: url(../img/bg4.jpg) no-repeat;
+}
+.page4 img:nth-of-type(1){
+	position: absolute;
+	top: 7%;
+    left: 0;
+    width: 100%;
+}
+.page4 img:nth-of-type(2){
+	position: absolute;
+	right: 6%;
+    bottom: 6%;
+    width: 40%;
+}
+.page4 img:nth-of-type(3){
+	position: absolute;
+	left: 7%;
+    bottom: 18%;
+    width: 40%;
+}
+.page4>p{
+	position: absolute;
+	left: 3%;
+    top: 29%;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-style: italic;
+    color: #8E8C8C;
+}
+
+.page5{
+	background: url(../img/bg5.png) no-repeat;
+}
+.page5 a img:nth-of-type(1){
+	position: absolute;
+	width: 50%;
+    left: 50%;
+    top: 35%;
+}
+.page5 img:nth-of-type(1){
+	position: absolute;
+	width: 90%;
+    left: 5%;
+    top: 15%;
+}
+.page5 img:nth-of-type(2){
+	position: absolute;
+	width: 100%;
+    left: 4%;
+    bottom: 13%;
+}
+
+.swiper-slide>div{
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+/*@-webkit-keyframes page1{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}*/
+
+/*覆盖animate的rotateIn动画效果的透明度和旋转度*/
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);;
+    transform: rotate3d(0, 0, 1, 360deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);;
+    transform: rotate3d(0, 0, 1, 360deg);
+    opacity: 1;
+  }
+}
