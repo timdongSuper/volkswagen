@@ -4,6 +4,6 @@ version:development-version
 
 description:volkswagen-project
 
-development time:2015-12-05
+project development date 2015-12-05
 
-submit time:2015-02-03
+submit to github date 2016-02-03
